@@ -25,7 +25,7 @@ const validS = async (sexo = 'Prefiero no decirlo') => {
         'Femenino', 
         'Prefiero no decirlo'
     ];
-    if(!dis.includes(sexo)){
+    if(dis.includes(sexo)){
         throw new Error(`El campo sexo no admite: ${sexo}`);
     }
 
